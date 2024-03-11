@@ -1,0 +1,30 @@
+{
+  "name": "set-memory",
+  "version": "1.0.7",
+  "description": "It uses NODE OPTIONS to set the memory when deploying any app /during building javascript and typescript projects so that it doesnt lead to out of heap memory allocation issues, especially on low memory machines.Use npm i -g set-memory Use set-memory <Number> and set-memory-auto for execution.",
+  "main": "index.js",
+  "bin": {
+  
+   "set-memory": "index.js",
+   "set-memory-auto": "auto.js"
+  },
+  "scripts": {
+    "set-memory": "node index.js",
+    "set-memory-auto": "node auto.js"
+  },
+  "keywords": [
+    "set-memory-limit",
+    "node-options",
+    "deployment",
+    "memory",
+    "fix"
+  ],
+  "author": "magmastorm3007",
+  "license": "ISC",
+  "dependencies": {
+    "child-process": "^1.0.2",
+    "dot-env": "^0.0.1",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.2"
+  }
+}
